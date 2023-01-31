@@ -1,0 +1,114 @@
+@import url('https://webfontworld.github.io/sunn/SUIT.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SUIT';
+}
+
+.loading-container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.container { 
+    display: flex;
+    height: 100vh;
+    .country {
+        width: 60%;
+        padding: 50px 50px;
+        background-color: #f2fbff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2{
+            font-weight: bold;
+            font-size: 30px;
+            color: #110e3c;
+            margin-top: 30px;
+            span{
+                font-weight: 300;
+            }
+        }
+    }
+    .current{
+        width: 40%;
+        background-color: #110e3c;
+        color: #fff;
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .current-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                i{
+                    font-size: 40px;
+                    display: flex;
+                }
+
+                dl {
+                    text-align: center;
+                    dt{
+                        font-size: 24px;
+                        margin-bottom: 2px;
+                        letter-spacing: 2px;
+                    }
+                    dd{
+                        font-size: 16px;
+                        opacity: .6;
+                    }
+                }
+            }
+
+            h3{
+                margin: 20px 0 10px 0;
+                display: flex;
+                align-items: flex-start;
+                gap: 5px;
+                font-size: 70px;
+                font-weight: 400;
+                span{
+                    font-size: 20px;
+                    font-weight: lighter;
+                }
+            }
+
+            p{
+                font-size: 18px;
+                opacity: .6;
+            }
+
+            ul{
+                margin-top: 20px;
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                li{
+                    opacity: .6;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .MuiButtonBase-root{
+            color: #fff !important;
+
+        }
+        .Mui-selected {
+            color: #1976d2 !important;
+        }
+    }
+}
